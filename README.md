@@ -22,8 +22,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/Luka-khokhashvili/NFT_preview_card_component.git)
-- Live Site URL: [live site URL](https://luka-khokhashvili.github.io/NFT_preview_card_component/)
+- Solution URL: [GitHub Solution](https://github.com/Luka-khokhashvili/NFT_preview_card_component.git)
+- Live Site URL: [GitHub Live Site](https://luka-khokhashvili.github.io/NFT_preview_card_component/)
 
 ## My process
 
@@ -63,7 +63,7 @@ I would love to and will focus on developing more skills and growing my knowledg
 
 ### Useful resources
 
-- [w3schools](https://www.w3schools.com/) - This website is a huge document of any coding languages. I used it to find usefull and neaded html tags and some css properties.
+- [w3schools](https://www.w3schools.com/) - This website is a huge documentation of any coding languages. I used it to find usefull and neaded html tags and some css properties.
 - [OpenAI ChatGPT](https://chat.openai.com/) - ChatGPT AI helped me fixing major bugs and some simple problems.
 
 ## Author
