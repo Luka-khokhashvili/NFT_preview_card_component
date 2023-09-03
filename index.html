@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head elements -->
+  <head>
+    <!--! meta elements(do not touch) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- style link elements -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- main style file -->
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- resets some style adjustments before use -->
+    <!-- font elements -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- preconnection element -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- preconnection element -->
+    <!-- Outfit font linked from google font site -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon and title -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>NFT preview card component</title>
+  </head>
+  <!-- Head elements -->
+  <!-- body -->
+  <body>
+    <div class="main-container">
+      <div class="image-container">
+        <div class="hover-overlay"></div>
+        <!-- hover overlay placeholder -->
+        <img
+          class="main-nft-image"
+          src="./images/image-equilibrium.jpg"
+          alt="Equilibrium, Equilibrium_NFT, main-image"
+        />
+        <img
+          src="./images/icon-view.svg"
+          alt="eye, view, eye_view, eye_icon"
+          class="hover-eye"
+        />
+        <!-- this image pops up only on hover -->
+      </div>
+      <div class="main-container-group">
+        <h1 class="heading">Equilibrium #3429</h1>
+        <h4 class="body-text">
+          Our Equilibrium collection promotes balance and calm.
+        </h4>
+        <!-- time and cost container -->
+        <div class="cost-and-time">
+          <!-- cost -->
+          <div class="cost">
+            <img
+              src="./images/icon-ethereum.svg"
+              alt="ethereum_coin_icon, ethereum_coin, coin"
+            />
+            <h5 class="caption-bold">0.041 ETH</h5>
+          </div>
+          <!-- time -->
+          <div class="time right">
+            <img
+              src="./images/icon-clock.svg"
+              alt="clock_icon, icon, clock, time"
+            />
+            <h5 class="caption">3 days left</h5>
+          </div>
+        </div>
+        <!-- creator element -->
+        <div class="creator-info">
+          <img
+            src="./images/image-avatar.png"
+            alt="avatar, creator, creator_avatar"
+            class="avatar"
+          />
+          <h6 class="creator-text">
+            Creation of <span class="white-text">Jules Wyvern</span>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- body -->
+</html>

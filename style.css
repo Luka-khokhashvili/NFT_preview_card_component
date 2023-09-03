@@ -1,0 +1,203 @@
+/* root elements, mainly used for color variables */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    background-color: var(--very-dark-blue-main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+/* main container styles */
+.main-container {
+    background-color: var(--very-dark-blue-card-bg);
+    width: 20.3%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 24px;
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 90.28%;
+    height: 55.67%;
+    border-radius: inherit;
+}
+  
+.main-nft-image {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+  
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: cyan; /* Add cyan background color */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+  
+.image-container:hover .hover-overlay {
+    opacity: 0.503; /* Show overlay when hovering over the container */
+}
+  
+.hover-eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.image-container:hover .hover-eye {
+    opacity: 1; /* Show the icon when hovering over the container */
+}
+
+.main-container-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    max-width: 89.28%;
+    height: auto;
+}
+/* main container end */
+/* text styles */
+.heading {
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 22px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.heading:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.body-text {
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.caption-bold {
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cyan);
+}
+
+.caption {
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.creator-text {
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.white-text {
+    color: var(--white);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.white-text:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+/* text styles end */
+/* cost and time div style */
+.cost-and-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: var(--very-dark-blue-line) 1px solid;
+}
+
+.cost {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+/* cost and time div style end */
+/* creator info style */
+.creator-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    padding: 22px 0;
+}
+
+.avatar {
+    width: 33px;
+    height: 33px;
+    border: 1px solid var(--white);
+    border-radius: 33px;
+    cursor: pointer;
+}
+/* creator info style end */
+
+/* other classes */
+.right{
+    display:flex;
+    margin-left: auto; /* added */
+}
+
+/* mobile responsive design */
+@media only screen and (max-width: 400px) {
+    .main-container {
+        width: 87.2%;
+    }
+}
+/* mobile responsive design end */
